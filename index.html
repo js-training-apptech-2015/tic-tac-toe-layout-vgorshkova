@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,9 +17,77 @@
       <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+      <title>Tic-tac-toe</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#" class="menu">New game <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#" class="menu">Mode</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--<h1 class="game-name">Tic-tac-toe</h1>-->
+    <div class="parent">
+        <div class="tic-tac-row">
+            <div class="tic-tac-cell">
+                <!-- Крестик-->
+                <svg>
+                    <line class="x1" x1="10%" y1="10%" x2="80%" y2="80%"></line>
+                    <line class="x2" x1="80%" y1="10%" x2="10%" y2="80%"></line>
+                </svg>
+            </div>
+            <div class="tic-tac-cell">
+                <!-- Крестик-->
+                <svg>
+                    <line class="x1" x1="10%" y1="10%" x2="80%" y2="80%"></line>
+                    <line class="x2" x1="80%" y1="10%" x2="10%" y2="80%"></line>
+                </svg>
+            </div>
+            <div class="tic-tac-cell">
+                <!-- Крестик-->
+                <svg>
+                    <line class="x1" x1="10%" y1="10%" x2="80%" y2="80%"></line>
+                    <line class="x2" x1="80%" y1="10%" x2="10%" y2="80%"></line>
+                </svg>
+            </div>
+        </div>
+        <div class="tic-tac-row">
+            <div class="tic-tac-cell">
+
+            </div>
+            <div class="tic-tac-cell">
+
+            </div>
+            <div class="tic-tac-cell">
+                <!-- Нолик-->
+                <svg>
+                    <circle class="o"></circle>
+                </svg>
+            </div>
+        </div>
+        <div class="tic-tac-row">
+            <div class="tic-tac-cell">
+                <!-- Нолик-->
+                <svg>
+                    <circle class="o"></circle>
+                </svg>
+            </div>
+            <div class="tic-tac-cell">
+
+            </div>
+            <div class="tic-tac-cell">
+
+            </div>
+        </div>
+    </div>
+    <div class="score">
+        You 1:1 CPU
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
